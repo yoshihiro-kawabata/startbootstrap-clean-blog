@@ -76,6 +76,19 @@
   }
 }
 
+.card-deck {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+
+.card-deck .card {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+  }
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -437,6 +450,16 @@ legend + * {
   -webkit-appearance: textfield;
 }
 
+.form-group > .col-sm-10 > .form-control::placeholder {
+  color: transparent;  
+}
+
+.form-group {
+  padding: 0.5rem 0;
+}
+.index_box{
+  width:50%;
+}
 /* rtl:raw:
 [type="tel"],
 [type="url"],
@@ -11246,3 +11269,4 @@ header.masthead .site-heading .h1 {
     font-size: 2.25rem;
   }
 }
+
